@@ -1,0 +1,77 @@
+:root{
+    --color-slogan: #FFFFFF;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+header{
+    width: 100%;
+    height: 62vh;
+    color: var(--color-slogan);
+    background-image: url(../resources/images/pc-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main{
+    width: 85%;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 11vh;
+    padding: 0 5vw;
+    background-color: #000000;
+}
+.nav, .nav__logo{
+    display: flex;
+    align-items: center;
+}
+.nav__logo__img{
+    height: 11vh;
+}
+.nav__list{
+    display: inline-block;
+    margin: 0 0.5vw;
+}
+.nav__list__link{
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-slogan);
+}
+.slogan{
+    display: flex;
+    justify-content: space-around;
+    color: var(--color-slogan);
+}
+.slogan__user{
+    height: 50vh;
+    margin-top: 1vh;
+}
+.benefits{
+    height: 38vh;
+}
+.benefits__title{
+    padding: 2vh;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.benefits__items{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.benefits__items__img{
+    height: 23vh;
+    border-radius: 50%;
+    border: 3px solid #242424;
+}
+.benefits__items__name{
+    margin: 1vh;
+    font-size: 1.2em;
+}
