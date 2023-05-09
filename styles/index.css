@@ -1,5 +1,6 @@
 :root{
     --color-slogan: #FFFFFF;
+    --color-nav: #000000;
 }
 *{
     font-family: 'Ubuntu', sans-serif;
@@ -7,7 +8,7 @@
 }
 header{
     width: 100%;
-    height: 62vh;
+    height: 61vh;
     color: var(--color-slogan);
     background-image: url(../resources/images/pc-background.webp);
     background-size: cover;
@@ -17,25 +18,26 @@ main{
     width: 85%;
     margin: auto;
 }
+.nav, .nav__logo{
+    display: flex;
+    align-items: center;
+}
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 11vh;
+    height: 10vh;
     padding: 0 5vw;
-    background-color: #000000;
-}
-.nav__logo{
-    display: flex;
-    align-items: center;
+    background-color: var(--color-nav);
 }
 .nav__logo__title{
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
 }
 .nav__logo__img{
-    height: 11vh;
+    height: 10vh;
+    filter: drop-shadow(1px 1px 2px var(--color-slogan));
 }
 .nav__list{
     display: inline-block;
@@ -53,19 +55,52 @@ main{
 .slogan{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 0 15vw;
     color: var(--color-slogan);
 }
 .slogan__user{
     height: 50vh;
     margin-top: 1vh;
 }
+.slogan__phrase{
+    height: 50vh;
+    text-align: right;
+}
+.slogan__phrase__title{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    font-size: 5em;
+    font-weight: 700;
+    font-style: italic;
+}
+.slogan__phrase__subtitle{
+    font-size: 3em;
+    font-weight: 500;
+    font-style: italic;
+}
+.slogan__phrase__idea{
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    font-size: 1.7em;
+    font-weight: 400;
+    font-style: italic;
+}
+.slogan__phrase__link{
+    margin-left: 3vh    ;
+    padding: 1.5vh 3vh;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color-slogan);
+    border: 3px solid var(--color-slogan);
+}
 .benefits{
-    height: 38vh;
+    height: 39vh;
 }
 .benefits__title{
     padding: 2vh;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
 }
 .benefits__items{
@@ -78,8 +113,9 @@ main{
     height: 23vh;
     border-radius: 50%;
     border: 3px solid #242424;
+    box-shadow: 7px 7px 7px 0 var(--color-nav);
 }
 .benefits__items__name{
     margin: 1vh;
-    font-size: 1em;
+    font-size: 1.2em;
 }

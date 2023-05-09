@@ -1,0 +1,39 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../resources/images/tools.webp);
+    background-size: cover;
+}
+.login-form{
+    padding: 5vh;
+    background-color: #80868A4D;
+}
+.login-form__title{
+    font-size: 3em;
+    font-weight: 700;
+}
+.login-form__input{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2vh;
+    padding: 2vh;
+    font-size: 1.2em;
+    border-radius: 1vh;
+}
+.login, .reset{
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.login{
+    background-color: #0000ff;
+}
+.reset{
+    background-color: #ff0000;
+}
