@@ -32,7 +32,7 @@ main{
     background-color: var(--color-nav);
 }
 .nav__logo__title{
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
 }
 .nav__logo__img{
@@ -44,7 +44,7 @@ main{
     margin: 0 0.5vw;
 }
 .nav__list__link{
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
     text-decoration: none;
     color: var(--color-slogan);
@@ -70,7 +70,7 @@ main{
 .slogan__phrase__title{
     margin-top: 5vh;
     margin-bottom: 3vh;
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 700;
     font-style: italic;
 }
@@ -82,13 +82,13 @@ main{
 .slogan__phrase__idea{
     margin-top: 3vh;
     margin-bottom: 5vh;
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 400;
     font-style: italic;
 }
 .slogan__phrase__link{
-    margin-left: 3vh    ;
-    padding: 1.5vh 3vh;
+    margin-left: 3vh;
+    padding: 1.5vh 2.5vh;
     text-decoration: none;
     font-weight: 500;
     color: var(--color-slogan);
@@ -100,7 +100,7 @@ main{
 .benefits__title{
     padding: 2vh;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
 }
 .benefits__items{

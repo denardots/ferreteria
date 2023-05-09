@@ -15,7 +15,7 @@ body{
     background-color: #80868A4D;
 }
 .login-form__title{
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 700;
 }
 .login-form__input{
@@ -24,7 +24,7 @@ body{
     margin: auto;
     margin-bottom: 2vh;
     padding: 2vh;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 1vh;
 }
 .login, .reset{
@@ -32,8 +32,8 @@ body{
     font-weight: 700;
 }
 .login{
-    background-color: #0000ff;
+    background-color: #0000FF;
 }
 .reset{
-    background-color: #ff0000;
+    background-color: #FF0000;
 }
