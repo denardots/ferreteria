@@ -7,7 +7,7 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(../resources/images/tools.webp);
+    background-image: url(../../resources/images/tools.webp);
     background-size: cover;
 }
 .login-form{
@@ -36,4 +36,10 @@ body{
 }
 .reset{
     background-color: #FF0000;
+}
+.login-form__a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
