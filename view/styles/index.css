@@ -25,7 +25,7 @@
     align-items: center;
 }
 .nav__logo__title{
-    font-size: 2.1em;
+    font-size: 2em;
     font-weight: 700;
     color: var(--color-logo);
     filter: drop-shadow(1px 1px 2px var(--color-slogan));
@@ -39,7 +39,7 @@
     margin: 0 0.5vw;
 }
 .nav__list__link{
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
     text-decoration: none;
     color: var(--color-slogan);
@@ -122,8 +122,10 @@ main{
 }
 .benefits__items__img{
     height: 23vh;
+    width: 23vh;
     border-radius: 50%;
     border: 3px solid #242424;
+    object-fit: cover;
     box-shadow: 7px 7px 7px 0 var(--color-nav);
 }
 .benefits__items__name{
@@ -155,14 +157,15 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8vh;
+    height: 7vh;
     background-color: #000000;
     color: #FFFFFF;
 }
 .categories__title{
     font-size: 3em;
+    color: var(--color-logo);
 }
 .categories__name{
     padding-top: 1vh;
-    font-size: 1.5em;
+    font-size: 1em;
 }
