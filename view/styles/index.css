@@ -1,28 +1,17 @@
 :root{
     --color-slogan: #FFFFFF;
     --color-nav: #000000;
+    --color-logo: #EFB810;
+    --color-focus: #B98F0E;
 }
 *{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
 }
-header{
-    width: 100%;
-    height: 61vh;
-    color: var(--color-slogan);
-    background-image: url(../../resources/images/pc-background.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-main{
-    width: 85%;
-    margin: auto;
-}
-.nav, .nav__logo{
-    display: flex;
-    align-items: center;
-}
+/* Cambios generales para PC */
 .nav{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,9 +20,15 @@ main{
     padding: 0 5vw;
     background-color: var(--color-nav);
 }
+.nav, .nav__logo{
+    display: flex;
+    align-items: center;
+}
 .nav__logo__title{
-    font-size: 2em;
+    font-size: 2.1em;
     font-weight: 700;
+    color: var(--color-logo);
+    filter: drop-shadow(1px 1px 2px var(--color-slogan));
 }
 .nav__logo__img{
     height: 10vh;
@@ -44,13 +39,25 @@ main{
     margin: 0 0.5vw;
 }
 .nav__list__link{
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 500;
     text-decoration: none;
     color: var(--color-slogan);
 }
 .nav__input, .nav__button{
     padding: 1vh;
+}
+.nav__button{
+    font-weight: 500;
+    background-color: #FFC300;
+}
+header{
+    width: 100%;
+    height: 51vh;
+    color: var(--color-slogan);
+    background-image: url(../../resources/images/pc-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .slogan{
     display: flex;
@@ -94,6 +101,10 @@ main{
     color: var(--color-slogan);
     border: 3px solid var(--color-slogan);
 }
+main{
+    width: 85%;
+    margin: auto;
+}
 .benefits{
     height: 39vh;
 }
@@ -118,4 +129,40 @@ main{
 .benefits__items__name{
     margin: 1vh;
     font-size: 1.2em;
+}
+/* Transiciones y Efectos */
+.nav__list__link:hover{
+    color: var(--color-logo);
+}
+.nav__list__link:focus{
+    color: var(--color-focus);
+}
+.nav__button:hover{
+    background-color: var(--color-logo);
+}
+.nav__button:focus{
+    background-color: var(--color-focus);
+}
+.slogan__phrase__link:hover{
+    background-color: var(--color-logo);
+    color: var(--color-nav);
+}
+.slogan__phrase__link:focus{
+    background-color: var(--color-focus);
+}
+/* TODO ESTO SE ELIMINA Y SE VUELVE A HACER */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.categories__title{
+    font-size: 3em;
+}
+.categories__name{
+    padding-top: 1vh;
+    font-size: 1.5em;
 }

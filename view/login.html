@@ -14,13 +14,15 @@
         <title>LOGIN</title>
     </head>
     <body>
-        <form class="login-form" action="../model/login.php" method="post" autocomplete="off">
+        <form class="login-form" id="login-form" autocomplete="off">
             <h1 class="login-form__title">INICIAR SESIÓN</h1>
             <input class="login-form__input" type="text" name="user" placeholder="Ingrese su nombre de usuario">
             <input class="login-form__input" type="password" name="password" placeholder="Ingrese su contraseña">
-            <input class="login-form__input login" type="submit" value="INICIAR SESIÓN">
-            <input class="login-form__input reset" type="reset" value="LIMPIAR">
-            <a class="login-form__a" href="../index.html">VOLVER AL INICIO</a>
+            <input class="login-form__button" type="submit" value="INICIAR SESIÓN">
+            <a class="login-form__link" href="../index.html">VOLVER AL INICIO</a>
+            <!-- Párrafo que mostrará el mensaje en caso de error -->
+            <p class="login-form__message" id="message"></p>
         </form>
+        <script src="../controller/login.js"></script>
     </body>
 </html>

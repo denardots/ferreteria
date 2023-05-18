@@ -1,3 +1,6 @@
+:root{
+    --color-fondo: #80868A4D;
+}
 *{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
@@ -12,34 +15,48 @@ body{
 }
 .login-form{
     padding: 5vh;
-    background-color: #80868A4D;
+    background-color: var(--color-fondo);
 }
 .login-form__title{
+    margin-top: 0;
     font-size: 2.5em;
     font-weight: 700;
 }
-.login-form__input{
+.login-form__input, .login-form__button{
     display: block;
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-bottom: 2vh;
     padding: 2vh;
-    font-size: 1em;
+    font-size: 1.2em;
     border-radius: 1vh;
+    border-color: var(--color-fondo);
 }
-.login, .reset{
-    color: #FFFFFF;
+.login-form__button{
     font-weight: 700;
+    background-color: #FFC300;
 }
-.login{
-    background-color: #0000FF;
-}
-.reset{
-    background-color: #FF0000;
-}
-.login-form__a{
+.login-form__link{
     display: block;
+    font-size: 1.2em;
+    font-weight: 700;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: #FF0000;
+}
+.login-form__message{
+    margin-top: 2vh;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+}
+/* Transiciones y Efectos */
+.login-form__button:hover{
+    background-color: #EFB810;
+}
+.login-form__button:focus{
+    background-color: #B98F0E;
+}
+.login-form__link:hover{
+    color: #000000;
 }
