@@ -1,134 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="ferretería,arequipa">
-        <meta name="description" content="Página web de la Ferretería El Perno Dorado">
-        <meta name="author" content="Denardo Taco Sánchez">
-        <meta name="robots" content="index">
-        <link rel="icon" href="resources/images/icono.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="view/styles/normalize.css">
-        <link rel="stylesheet" href="view/styles/index.css">
-        <title>EL PERNO DORADO</title>
-    </head>
-    <body>
-        <nav class="nav">
-            <div class="nav__logo">
-                <figure>
-                    <img class="nav__logo__img" src="resources/images/logo.webp" alt="logo">
-                </figure>
-                <h1 class="nav__logo__title">EL PERNO DORADO</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ferretería,arequipa">
+    <meta name="description" content="Página web de la Ferretería El Perno Dorado">
+    <meta name="author" content="Denardo Taco Sánchez">
+    <meta name="robots" content="index">
+    <link rel="icon" href="resources/images/icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="view/styles/normalize.css">
+    <link rel="stylesheet" href="view/styles/index.css">
+    <title>EL PERNO DORADO</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__logo">
+            <figure>
+                <img class="nav__logo__img" src="resources/images/logo.webp" alt="logo">
+            </figure>
+            <h1 class="nav__logo__title">EL PERNO DORADO</h1>
+        </div>
+        <ul>
+            <li class="nav__list">
+                <a class="nav__list__link" href="">Inicio</a>
+            </li>
+            <li class="nav__list">
+                <a class="nav__list__link" href="">Categorías</a
+                ></li>
+            <li class="nav__list">
+                <a class="nav__list__link" href="">Productos</a>
+            </li>
+            <li class="nav__list">
+                <a class="nav__list__link" href="">Nosotros</a>
+            </li>
+            <li class="nav__list">
+                <a class="nav__list__link" href="">Contacto</a>
+            </li>
+            <li class="nav__list">
+                <a class="nav__list__link" href="view/login.html">Admin</a>
+            </li>
+        </ul>
+        <form action="" method="post">
+            <input class="nav__input" type="text" name="txtBusqueda" placeholder="Busca un Producto">
+            <input class="nav__button" type="submit" value="BUSCAR">
+        </form>
+    </nav>
+    <header>
+        <div class="slogan">
+            <figure>
+                <img class="slogan__user" src="resources/images/user.webp" alt="usuario">
+            </figure>
+            <div class="slogan__phrase">
+                <h2 class="slogan__phrase__title">Las mejores marcas</h2>
+                <h2 class="slogan__phrase__subtitle">Los mejores precios</h2>
+                <h3 class="slogan__phrase__idea">Cuidamos Vida pero también tu Economía</h3>
+                <a class="slogan__phrase__link" href="">CONTÁCTANOS</a>
+                <a class="slogan__phrase__link" href="">VER PRODUCTOS</a>
             </div>
-            <ul>
-                <li class="nav__list">
-                    <a class="nav__list__link" href="">Inicio</a>
-                </li>
-                <li class="nav__list">
-                    <a class="nav__list__link" href="">Categorías</a
-                    ></li>
-                <li class="nav__list">
-                    <a class="nav__list__link" href="">Productos</a>
-                </li>
-                <li class="nav__list">
-                    <a class="nav__list__link" href="">Nosotros</a>
-                </li>
-                <li class="nav__list">
-                    <a class="nav__list__link" href="">Contacto</a>
-                </li>
-                <li class="nav__list">
-                    <a class="nav__list__link" href="view/login.html">Admin</a>
-                </li>
-            </ul>
-            <form action="" method="post">
-                <input class="nav__input" type="text" name="txtBusqueda" placeholder="Busca un Producto">
-                <input class="nav__button" type="submit" value="BUSCAR">
-            </form>
-        </nav>
-        <header>
-            <div class="slogan">
-                <figure>
-                    <img class="slogan__user" src="resources/images/user.webp" alt="usuario">
+        </div>
+    </header>
+    <main>
+        <section class="benefits">
+            <h2 class="benefits__title">BENEFICIOS PARA NUESTROS USUARIOS</h2>
+            <div class="benefits__container">
+                <figure class="benefits__container__item">
+                    <img class="benefits__container__item__img" src="resources/images/attention.webp" alt="atención">
+                    <figcaption class="benefits__items__name">Atención por WhatsApp</figcaption>
                 </figure>
-                <div class="slogan__phrase">
-                    <h2 class="slogan__phrase__title">Las mejores marcas</h2>
-                    <h2 class="slogan__phrase__subtitle">Los mejores precios</h2>
-                    <h3 class="slogan__phrase__idea">Cuidamos Vida pero también tu Economía</h3>
-                    <a class="slogan__phrase__link" href="">CONTÁCTANOS</a>
-                    <a class="slogan__phrase__link" href="">VER PRODUCTOS</a>
-                </div>
+                <figure class="benefits__container__item">
+                    <img class="benefits__container__item__img" src="resources/images/attention.webp" alt="atención">
+                    <figcaption class="benefits__items__name">Atención por WhatsApp</figcaption>
+                </figure>
+                <figure class="benefits__container__item">
+                    <img class="benefits__container__item__img" src="resources/images/attention.webp" alt="atención">
+                    <figcaption class="benefits__items__name">Atención por WhatsApp</figcaption>
+                </figure>
+                <figure class="benefits__container__item">
+                    <img class="benefits__container__item__img" src="resources/images/attention.webp" alt="atención">
+                    <figcaption class="benefits__items__name">Atención por WhatsApp</figcaption>
+                </figure>
             </div>
-        </header>
-        <main>
-            <section class="benefits">
-                <h2 class="benefits__title">BENEFICIOS PARA NUESTROS USUARIOS</h2>
-                <div class="benefits__items">
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/attention.webp" alt="atención">
-                        <figcaption class="benefits__items__name">Atención por WhatsApp</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/delivery.webp" alt="atención">
-                        <figcaption class="benefits__items__name">Delivery en minutos</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/pay.webp" alt="atención">
-                        <figcaption class="benefits__items__name">Pago Virtual</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/pickup-product.webp" alt="atención">
-                        <figcaption class="benefits__items__name">Recojo en tienda</figcaption>
-                    </figure>
-                </div>
-            </section>
-            <!-- SECCIÓN A ELIMINAR POSTERIORMENTE -->
-            <section class="categories">
-                <h2 class="benefits__title categories__title">CATEGORIAS DE PRODUCTOS</h2><br><br>
-                <div class="benefits__items">
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/construccion.jpg" alt="atención">
-                        <figcaption class="benefits__items__name categories__name">CONSTRUCCIÓN</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/ferreteria.jpg" alt="atención">
-                        <figcaption class="benefits__items__name categories__name">GASFITERIA</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/electricidad.png" alt="atención">
-                        <figcaption class="benefits__items__name categories__name">ELECTRICIDAD</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/pinturas.jpg" alt="atención">
-                        <figcaption class="benefits__items__name categories__name">PINTURAS</figcaption>
-                    </figure>
-                </div><br><br>
-                <div class="benefits__items">
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/herramientas.jpg" alt="atención">
-                        <figcaption class="benefits__items__name categories__name">HERRAMIENTAS</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/limpieza.jpg" alt="atención">
-                        <figcaption class="benefits__items__name categories__name">LIMPIEZA</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/baño.jpg" alt="atención">
-                        <figcaption class="benefits__items__name categories__name">BAÑO</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="benefits__items__img" src="resources/images/seguridad.png" alt="atención">
-                        <figcaption class="benefits__items__name categories__name">SEGURIDAD</figcaption>
-                    </figure>
-                </div><br>
-            </section>
-        </main>
-        <footer>
-            <h4>Copyright - Todos los Derechos Reservados &copy;</h4>
-        </footer>
-        <!-- HASTA QUE SE ELIMINA Y SE VUELVE A HACER -->
-    </body>
+        </section>
+</body>
 </html>

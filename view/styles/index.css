@@ -8,7 +8,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
 }
-/* Cambios generales para PC */
+/* Estilos para PC */
 .nav{
     position: sticky;
     top: 0;
@@ -114,15 +114,17 @@ main{
     font-size: 2em;
     font-weight: 700;
 }
-.benefits__items{
+.benefits__container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
 }
-.benefits__items__img{
+.benefits__container__item{
+    width: 20vw;
+}
+.benefits__container__item__img{
     height: 23vh;
-    width: 23vh;
     border-radius: 50%;
     border: 3px solid #242424;
     object-fit: cover;
@@ -151,21 +153,4 @@ main{
 }
 .slogan__phrase__link:focus{
     background-color: var(--color-focus);
-}
-/* TODO ESTO SE ELIMINA Y SE VUELVE A HACER */
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7vh;
-    background-color: #000000;
-    color: #FFFFFF;
-}
-.categories__title{
-    font-size: 3em;
-    color: var(--color-logo);
-}
-.categories__name{
-    padding-top: 1vh;
-    font-size: 1em;
 }

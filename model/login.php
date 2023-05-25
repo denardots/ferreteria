@@ -1,12 +1,14 @@
 <?php
-	include("connect.php");
-	$username=$_POST['user'];
-	$password=$_POST['password'];
-    $login="SELECT * FROM login WHERE username='$username' AND password='$password'";
-    $result=mysqli_query($connect,$login);
-    // Para saber la cantidad de filas que cumplen la condición utilizamos: num-rows
-    if($result->num_rows>0){
-        // Para enviar una respuesta al controlador JavaScript debemos imrpmirla con un echo
+	require('connect.php');
+    $username=$_POST['user'];
+    $password=$_POST['password'];
+    $connect->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    $query=$connect->prepare("SELECT * FROM login WHERE username= :username AND password= :password");
+    $query->bindParam(":username",$username);
+    $query->bindParam(":password",$password);
+    $query->execute();
+    $exists=$query->fetch(PDO::FETCH_ASSOC);
+    if($exists){
         echo "1";
     }else{
         echo "0";

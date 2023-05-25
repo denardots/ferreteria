@@ -21,3 +21,5 @@ loginForm.addEventListener(`submit`,(e)=>{
             }
     })
 });
+
+loginForm.addEventListener(`reset`,()=>message.innerHTML=``);
