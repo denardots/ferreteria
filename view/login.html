@@ -14,6 +14,8 @@
     <title>LOGIN</title>
 </head>
 <body>
+    <!-- Pedimos al controlador que controle si existe una sesión abierta -->
+    <script src="../controller/joined.js"></script>
     <form class="login-form" id="login-form" autocomplete="off">
         <h1 class="login-form__title">INICIAR SESIÓN</h1>
         <input class="login-form__input" type="text" name="user" placeholder="Ingrese su nombre de usuario">
@@ -24,6 +26,7 @@
         <!-- Párrafo que mostrará el mensaje en caso de error -->
         <p class="login-form__message" id="message"></p>
     </form>
+    <!-- Enviamos los datos del formulario al controlador -->
     <script src="../controller/login.js"></script>
 </body>
 </html>
