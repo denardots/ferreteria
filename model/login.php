@@ -22,4 +22,6 @@
     }else{
         echo "0";
     }
+    $query=null;
+    $connect=null;
 ?>
