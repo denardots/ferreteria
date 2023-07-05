@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+<?php
+    // Comprobamos si el usuario tiene una sesión abierta
+    session_start();
+    if(isset($_SESSION['username'])){
+        header("location:../view/panel.php");
+    }
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,19 +21,26 @@
     <title>LOGIN</title>
 </head>
 <body>
-    <!-- Pedimos al controlador que controle si existe una sesión abierta -->
-    <script src="../controller/joined.js"></script>
-    <form class="login-form" id="login-form" autocomplete="off">
+    <form class="login-form" action="../controller/login.php" method="post" autocomplete="off">
         <h1 class="login-form__title">INICIAR SESIÓN</h1>
-        <input class="login-form__input" type="text" name="user" placeholder="Ingrese su nombre de usuario">
-        <input class="login-form__input" type="password" name="password" placeholder="Ingrese su contraseña">
+        <input class="login-form__input" type="text" name="user" placeholder="Ingrese su nombre de usuario" required>
+        <input class="login-form__input" type="password" name="password" placeholder="Ingrese su contraseña" required>
         <input class="login-form__button submit" type="submit" value="INICIAR SESIÓN">
-        <input class="login-form__button reset" type="reset" value="LIMPIAR">
+        <input class="login-form__button reset" id="clean" type="reset" value="LIMPIAR">
         <a class="login-form__link" href="../index.html">VOLVER AL INICIO</a>
         <!-- Párrafo que mostrará el mensaje en caso de error -->
         <p class="login-form__message" id="message"></p>
     </form>
-    <!-- Enviamos los datos del formulario al controlador -->
-    <script src="../controller/login.js"></script>
 </body>
+<?php
+    // Comprobamos si se ingresaron datos incorrectos, para mostrar el mensaje de error
+    if(isset($_SESSION['error'])){
+        echo "<script>
+                const message=document.getElementById(`message`);
+                const clean=document.getElementById(`clean`);
+                message.innerHTML=`¡DATOS INCORRECTOS!`;
+                clean.addEventListener(`click`,()=>message.innerHTML=``);
+            </script>";
+    }
+?>
 </html>

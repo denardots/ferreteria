@@ -25,7 +25,7 @@
     align-items: center;
 }
 .nav__logo__title{
-    font-size: 2em;
+    font-size: 35px;
     font-weight: 700;
     color: var(--color-logo);
     filter: drop-shadow(1px 1px 2px var(--color-slogan));
@@ -39,16 +39,17 @@
     margin: 0 0.5vw;
 }
 .nav__list__link{
-    font-size: 1em;
+    font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     color: var(--color-slogan);
 }
 .nav__input, .nav__button{
     padding: 1vh;
+    font-size: 17px;
 }
 .nav__button{
-    font-weight: 500;
+    font-weight: 600;
     background-color: #FFC300;
 }
 header{
@@ -77,19 +78,19 @@ header{
 .slogan__phrase__title{
     margin-top: 5vh;
     margin-bottom: 3vh;
-    font-size: 4em;
+    font-size: 70px;
     font-weight: 700;
     font-style: italic;
 }
 .slogan__phrase__subtitle{
-    font-size: 3em;
+    font-size: 50px;
     font-weight: 500;
     font-style: italic;
 }
 .slogan__phrase__idea{
     margin-top: 3vh;
     margin-bottom: 5vh;
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: 400;
     font-style: italic;
 }
@@ -97,6 +98,7 @@ header{
     margin-left: 3vh;
     padding: 1.5vh 2.5vh;
     text-decoration: none;
+    font-size: 17px;
     font-weight: 500;
     color: var(--color-slogan);
     border: 3px solid var(--color-slogan);
@@ -111,7 +113,7 @@ main{
 .benefits__title{
     padding: 2vh;
     text-align: center;
-    font-size: 2em;
+    font-size: 40px;
     font-weight: 700;
 }
 .benefits__container{
@@ -132,7 +134,7 @@ main{
 }
 .benefits__items__name{
     margin: 1vh;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 /* Transiciones y Efectos */
 .nav__list__link:hover{

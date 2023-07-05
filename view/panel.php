@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+<?php
+    // Comprobamos si el usuario se logueo previamente
+    session_start();
+    if(!isset($_SESSION['username'])){
+        header("location:../view/login.php");
+    }
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +20,7 @@
     <title>PANEL DEL ADMINISTRADOR</title>
 </head>
 <body>
-    <!-- Pedimos al controlador que controle si existe una sesión abierta -->
-    <script src="../controller/session.js"></script>
     <h1>BIENVENIDO ADMINISTRADOR</h1>
-    <!-- Enviamos los datos del formulario al controlador -->
-    <a href="../model/close.php">Cerrar Sesión</a>
+    <a href="../controller/close.php">Cerrar Sesión</a>
 </body>
 </html>

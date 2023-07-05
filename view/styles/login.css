@@ -20,32 +20,33 @@ body{
 }
 .login-form__title{
     margin-top: 0;
-    font-size: 2.5em;
+    font-size: 45px;
     font-weight: 700;
 }
 .login-form__input, .login-form__button{
     display: block;
-    width: 90%;
+    width: 93%;
     margin: auto;
     margin-bottom: 2vh;
     padding: 2vh;
-    font-size: 1em;
+    font-size: 18px;
     border-radius: 1vh;
     border-color: var(--color-fondo);
 }
 .login-form__button{
+    font-size: 18px;
     font-weight: 700;
 }
 .submit{
     background-color: #FFC300;
 }
 .reset{
-    background-color: #FF0000;
+    background-color: var(--color-mensaje);
     color: #FFFFFF;
 }
 .login-form__link{
     display: block;
-    font-size: 1em;
+    font-size: 17px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
@@ -53,7 +54,7 @@ body{
 }
 .login-form__message{
     margin-top: 2vh;
-    font-size: 1em;
+    font-size: 20px;
     font-weight: 500;
     text-align: center;
 }
@@ -65,10 +66,7 @@ body{
     background-color: #B98F0E;
 }
 .reset:hover{
-    background-color: #BB0E0E;
-}
-.reset:focus{
-    background-color: #B82C2C;
+    background-color: #CC1212;
 }
 .login-form__link:hover{
     color: #000000;
