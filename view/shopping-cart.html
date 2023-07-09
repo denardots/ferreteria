@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/nav-footer.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <title>NOSOTROS</title>
+    <link rel="stylesheet" href="styles/shopping-cart.css">
+    <title>CARRITO DE COMPRAS</title>
     <script src="https://kit.fontawesome.com/dd474d89cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -58,56 +58,98 @@
         </a>
     </div>
     <header class="header">
-        <h2 class="header__title">NOSOTROS</h2>
+        <h2 class="header__title">CARRITO DE COMPRAS</h2>
     </header>
     <main>
-        <article class="about">
-            <figure>
-                <img class="about__img" src="../resources/images/about.webp" alt="about">
-            </figure>
-            <div class="about__content">
-                <h2 class="about__content__title">SOBRE EL PERNO DORADO</h2>
-                <p class="about__content__text">Somos una empresa arequipeña con más de 20 años de experiencia en la comercialización de una amplia gama de productos de ferretería, brindándoles soluciones integrales  con los mejores precios del mercado.</p>
-                <p class="about__content__text">Nuestros servicios están orientados a satisfacer las necesidades de nuestros clientes a través de procesos eficientes y apoyarnos con tecnología de última generación.</p>
-            </div>
-        </article>
-        <div class="concepts">
-            <article class="concepts__item mission">
-                <h3 class="concepts__item__title">MISIÓN</h3>
-                <p class="concepts__item__text">Entregarles a nuestros clientes una amplia gama de productos y equipos que necesiten para poder desempeñar sus tareas de una manera eficiente y segura.</p>
-            </article>
-            <article class="concepts__item vision">
-                <h3 class="concepts__item__title">VISIÓN</h3>
-                <p class="concepts__item__text">Nos proyectamos como una empresa conocida en el área de ferretería, así como también brindar a nuestros clientes una gran cobertura de distribución, creando un compromiso que nos permite brindar un servicio de calidad.</p>
-            </article>
-        </div>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <th>IMAGEN</th>
+                    <th>PRODUCTO</th>
+                    <th>CANTIDAD</th>
+                    <th>PRECIO</th>
+                    <th>SUBTOTAL</th>
+                    <th>ACCIONES</th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="../resources/images/electric-extension.jpg" alt="producto">
+                        </figure>
+                    </td>
+                    <td>Extensión Eléctrica 5M</td>
+                    <td class="amount">
+                        <figure>
+                            <img class="amount__operate" src="../resources/images/subtraction.png" alt="menos">
+                        </figure>
+                        <input class="amount__number" type="number" min="1" value="1" readonly>
+                        <figure>
+                            <img class="amount__operate" src="../resources/images/addition.png" alt="mas">
+                        </figure>
+                    </td>
+                    <td>S/ 99.99</td>
+                    <td>S/ 99.99</td>
+                    <td>
+                        <button class="button delete">ELIMINAR</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="../resources/images/electric-extension.jpg" alt="producto">
+                        </figure>
+                    </td>
+                    <td>Extensión Eléctrica 5M</td>
+                    <td class="amount">
+                        <figure>
+                            <img class="amount__operate" src="../resources/images/subtraction.png" alt="menos">
+                        </figure>
+                        <input class="amount__number" type="number" min="1" value="1" readonly>
+                        <figure>
+                            <img class="amount__operate" src="../resources/images/addition.png" alt="mas">
+                        </figure>
+                    </td>
+                    <td>S/ 99.99</td>
+                    <td>S/ 99.99</td>
+                    <td>
+                        <button class="button delete">ELIMINAR</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="../resources/images/electric-extension.jpg" alt="producto">
+                        </figure>
+                    </td>
+                    <td>Extensión Eléctrica 5M</td>
+                    <td class="amount">
+                        <figure>
+                            <img class="amount__operate" src="../resources/images/subtraction.png" alt="menos">
+                        </figure>
+                        <input class="amount__number" type="number" min="1" value="1" readonly>
+                        <figure>
+                            <img class="amount__operate" src="../resources/images/addition.png" alt="mas">
+                        </figure>
+                    </td>
+                    <td>S/ 99.99</td>
+                    <td>S/ 99.99</td>
+                    <td>
+                        <button class="button delete">ELIMINAR</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="submit" value="FINALIZAR COMPRA" class="button">
+                    </td>
+                    <td class="special">TOTAL</td>
+                    <td class="special">S/ 99.99</td>
+                    <td>
+                        <button class="button update" disabled>ACTUALIZAR</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </main>
-    <section class="values">
-        <h2 class="values__title">NUESTROS VALORES</h2>
-        <div class="values__container">
-            <article class="values__value">
-                <figure>
-                    <img class="values__value__img" src="../resources/images/commitment.png" alt="compromiso">
-                </figure>
-                <h3 class="values__value__title">COMPROMISO</h3>
-                <p class="values__value__text">Realizamos nuestro trabajo reflejando el compromiso con nuestros clientes. Trabajamos con una fuerte convicción en ayudar a cumplir los objetivos de nuestros clientes.</p>
-            </article>
-            <article class="values__value">
-                <figure>
-                    <img class="values__value__img" src="../resources/images/excellence.png" alt="excelencia">
-                </figure>
-                <h3 class="values__value__title">EXCELENCIA</h3>
-                <p class="values__value__text">Realizamos nuestro trabajo con excelencia, alcanzando los niveles de calidad requeridos por nuestros clientes. Trabajamos bajo la óptica de una cultura de gestión eficiente.</p>
-            </article>
-            <article class="values__value">
-                <figure>
-                    <img class="values__value__img" src="../resources/images/honesty.png" alt="honestidad">
-                </figure>
-                <h3 class="values__value__title">HONESTIDAD</h3>
-                <p class="values__value__text">Procedemos con honradez en nuestras actividades diarias, buscando responder a la confianza que nuestros clientes han depositado en nosotros, demostrando una conducta recta y honorable en nuestras actividades.</p>
-            </article>
-        </div>
-    </section>
     <footer class="footer">
         <figure>
             <img class="footer__logo" src="../resources/images/logo.webp" alt="logo">

@@ -1,0 +1,72 @@
+:root{
+    --color-logo: #EFB810;
+    --color-fondo: #80868A4D;
+    --color-label: #FFFFFF;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+/* Estilos para PC */
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+}
+.header__title{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-logo);
+    filter: drop-shadow(1px 1px 2px var(--color-label));
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: auto;
+    background-color: var(--color-fondo);
+}
+.update-form{
+    width: 30vw;
+}
+.update-form__input, .update-form__button{
+    display: block;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 1vh;
+    padding: 1.5vh;
+    font-size: 17px;
+    border-radius: 1vh;
+    border-color: var(--color-fondo);
+    background-color: var(--color-label);
+}
+.update-form__editable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+}
+.label{
+    margin-top: -1px;
+    width: 25%;;
+}
+.textarea{
+    resize: none;
+}
+.update-form__button{
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #FFC300;
+}
+/* Transiciones y Efectos */
+.update-form__button:hover{
+    background-color: var(--color-logo);
+}
+.update-form__button:focus{
+    background-color: #B98F0E;
+}

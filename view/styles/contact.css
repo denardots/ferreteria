@@ -1,0 +1,59 @@
+:root{
+    --color-logo: #EFB810;
+    --color-fondo: #80868A4D;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+/* Estilos para PC */
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+}
+.header__title{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-logo);
+    filter: drop-shadow(1px 1px 2px #FFFFFF);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    margin: auto;
+    background-color: var(--color-fondo);
+}
+.contact-form{
+    width: 35vw;
+}
+.contact-form__input, .contact-form__button{
+    display: block;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 1vh;
+    padding: 1.5vh;
+    font-size: 17px;
+    border-radius: 1vh;
+    border-color: var(--color-fondo);
+}
+.textarea{
+    resize: none;
+}
+.contact-form__button{
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #FFC300;
+}
+/* Transiciones y Efectos */
+.contact-form__button:hover{
+    background-color: var(--color-logo);
+}
+.contact-form__button:focus{
+    background-color: #B98F0E;
+}

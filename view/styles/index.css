@@ -3,54 +3,15 @@
     --color-nav: #000000;
     --color-logo: #EFB810;
     --color-focus: #B98F0E;
+    --color-name: #AAA9A9;
 }
 *{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
 }
 /* Estilos para PC */
-.nav{
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    padding: 0 5vw;
-    background-color: var(--color-nav);
-}
-.nav, .nav__logo{
-    display: flex;
-    align-items: center;
-}
-.nav__logo__title{
-    font-size: 35px;
-    font-weight: 700;
-    color: var(--color-logo);
-    filter: drop-shadow(1px 1px 2px var(--color-slogan));
-}
-.nav__logo__img{
-    height: 10vh;
-    filter: drop-shadow(1px 1px 2px var(--color-slogan));
-}
-.nav__list{
-    display: inline-block;
-    margin: 0 0.5vw;
-}
-.nav__list__link{
-    font-size: 20px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--color-slogan);
-}
-.nav__input, .nav__button{
-    padding: 1vh;
-    font-size: 17px;
-}
-.nav__button{
-    font-weight: 600;
-    background-color: #FFC300;
+body{
+    background-color: #80868A4D;
 }
 header{
     width: 100%;
@@ -115,6 +76,7 @@ main{
     text-align: center;
     font-size: 40px;
     font-weight: 700;
+    color: var(--color-focus);
 }
 .benefits__container{
     display: flex;
@@ -136,23 +98,100 @@ main{
     margin: 1vh;
     font-size: 20px;
 }
-/* Transiciones y Efectos */
-.nav__list__link:hover{
+.section{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+}
+.section__title{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-logo);
+    filter: drop-shadow(1px 1px 2px var(--color-slogan));
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 55vh;
+    width: 85vw;
+    margin: auto;
+    padding: 0 3vw;
+    padding-top: 6vh;
+}
+.product{
+    text-align: center;
+    height: 31vh;
+    min-width: 17vw;
+    margin-bottom: 6vh;
+    background-color: var(--color-slogan);
+    border: 2px solid var(--color-name);
+}
+.product__card{
+    position: relative;
+    height: 22vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 1vh;
+}
+.product__card__img{
+    height: 22vh;
+    width: 100%;
+}
+.product__card__button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.5vh 0;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-slogan);
+    background-color: var(--color-nav);
+    opacity: 0;
+    transition: 0.5s;
+}
+.product__info{
+    text-decoration: none;
+}
+.product__info__name{
+    margin-top: 1.5vh;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-name);
+}
+.product__info__price{
+    margin-top: 0.5vh;
+    font-size: 18px;
+    font-weight: 700;
     color: var(--color-logo);
 }
-.nav__list__link:focus{
-    color: var(--color-focus);
-}
-.nav__button:hover{
-    background-color: var(--color-logo);
-}
-.nav__button:focus{
-    background-color: var(--color-focus);
-}
+/* Transiciones y Efectos */
 .slogan__phrase__link:hover{
     background-color: var(--color-logo);
     color: var(--color-nav);
 }
 .slogan__phrase__link:focus{
     background-color: var(--color-focus);
+}
+.product__card:hover .product__card__button{
+    opacity: 1;
+}
+.product__info:hover .product__info__name{
+    color: var(--color-nav);
+}
+.product__info:hover .product__info__price{
+    color: #B98F0E;
+}
+.product__card__button:hover{
+    color: var(--color-nav);
+    background-color: var(--color-logo);
+}
+.product__card__button:focus{
+    color: var(--color-nav);
+    background-color: #B98F0E;
 }

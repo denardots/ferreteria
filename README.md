@@ -1,18 +1,40 @@
 # ferreteria
-
 Página web de ferretería
 PÁGINAS DE INSPIRACIÓN:
 https://martin.com.pe/
 https://prosinfer.com/
 https://ferreteriajireh.com.pe/chincha
 
-MÓDULOS DE LA PÁGINA
-1º Login y sesión del Administrador (LISTO)
-2º Página de Nosotros
-3º Página de Categorías
+DISEÑO DE LA PÁGINA
+1º Index (LISTO)
+2º Login (LISTO)
+3º Página de Nosotros (LISTO)
+4º Página de Categorías (LISTO)
+5º Página de Productos (LISTO)
+6º Página detallada de Producto (LISTO)
+7º Formulario de Contacto (LISTO)
+8º Carrito de compras (LISTO)
+9º Panel del Administrador (LISTO)
+10º Ver Productos (LISTO)
+11º Agregar producto (LISTO)
+12º Modificar producto (LISTO)
+13º Historial de Ventas (LISTO)
+14º Venta detallada (LISTO)
+15º Optimización de código
+
+PROGRAMACIÓN DE LA PÁGINA
+1º Index
+2º Login y sesión del administrador (LISTO)
+3º Base de Datos Relacional
 4º Página de Productos
-5º Formulario de Contacto
-6º El producto debe tener: código, nombre, precio, categoria, marca, cantidad
-7º El administrador debe poder realizar el CRUD de cualquier producto
-8º Realizar la búsqueda de Productos
-9º Carrito de compras
+5º Página detallada de Producto
+6º Formulario de Contacto
+7º Carrito de compras
+8º Ver Productos Admin
+9º Agregar producto
+10º Modificar producto
+11º Eliminar producto
+12º Historial de Ventas
+13º Venta detallada
+14º Descarga de Archivos
+15º Optimización de Código (MVC -FETCH)

@@ -1,0 +1,72 @@
+:root{
+    --color-logo: #EFB810;
+    --color-borde: #80868A4D;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+/* Estilos para PC */
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+}
+.header__title{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-logo);
+    filter: drop-shadow(1px 1px 2px #FFFFFF);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 80vw;
+    margin: auto;
+    padding: 3vh 4vw;
+}
+th, td{
+    padding: 1vh 1vw;
+    font-size: 18px;
+    font-weight: 500;
+    border: 3px solid var(--color-borde);
+}
+th{
+    color: #000000;
+    background-color: var(--color-logo);
+}
+img{
+    height: 8vh;
+}
+.amount{
+    text-align: center;
+}
+.price{
+    text-align: right;
+}
+.button{
+    display: block;
+    padding: 1vh 1vw;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+    background-color: #FFC300;
+    border: none;
+}
+.download{
+    margin-top: 5vh;
+    border: 3px solid var(--color-borde);
+}
+/* Transiciones y Efectos */
+.button:hover{
+    background-color: var(--color-logo);
+}
+.button:focus{
+    background-color: #B98F0E;
+}

@@ -1,0 +1,147 @@
+:root{
+    --color-slogan: #FFFFFF;
+    --color-nav: #000000;
+    --color-logo: #EFB810;
+    --color-focus: #B98F0E;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+/* Estilos para PC */
+.nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 0 5vw;
+    background-color: var(--color-nav);
+    z-index: 1;
+}
+.nav, .nav__logo{
+    display: flex;
+    align-items: center;
+}
+.nav__logo__img{
+    height: 10vh;
+    filter: drop-shadow(1px 1px 2px var(--color-slogan));
+}
+.nav__logo__title{
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-logo);
+    filter: drop-shadow(1px 1px 2px var(--color-slogan));
+}
+.nav__list{
+    display: inline-block;
+    margin: 0 0.5vw;
+}
+.nav__list__link{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-slogan);
+}
+.nav__input, .nav__button{
+    padding: 1vh;
+    font-size: 17px;
+}
+.nav__button{
+    font-weight: 600;
+    background-color: #FFC300;
+}
+.shopping-cart{
+    position: fixed;
+    bottom: 2vh;
+    right: 1vw;
+    width: 70px;
+    padding: 26px 15px 15px;
+    background-color: var(--color-logo);
+}
+.shopping-cart__number{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    color: var(--color-slogan);
+    background-color: var(--color-nav);
+    border-radius: 50%;
+}
+.shopping-cart__icon{
+    color: var(--color-nav);
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 23vh;
+    color: var(--color-slogan);
+    background-color: var(--color-nav);
+}
+.footer__logo{
+    margin-top: -2vh;
+    height: 18vh;
+    filter: drop-shadow(2px 2px 3px var(--color-slogan));
+}
+.footer__name{
+    margin-top: -2vh;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-logo);
+}
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fa-2xl{
+    margin-bottom: 2vh;
+}
+.footer__info__title{
+    margin: 1vh 0;
+    font-size: 23px;
+    color: var(--color-logo);
+}
+.footer__info__list{
+    list-style: none;
+}
+.footer__info__list__link{
+    margin-left: 5px;
+    text-decoration: none;
+    color: var(--color-slogan);
+}
+.copyright{
+    height: 2vh;
+    text-align: center;
+    color: #9E9D9D;
+    background-color: #242424;
+}
+/* Transiciones y Efectos */
+.nav__list__link:hover{
+    color: var(--color-logo);
+}
+.nav__list__link:focus{
+    color: var(--color-focus);
+}
+.nav__button:hover{
+    background-color: var(--color-logo);
+}
+.nav__button:focus{
+    background-color: var(--color-focus);
+}
+.footer__info__list__link:hover{
+    color: var(--color-logo);
+}
+.footer__info__list__link:focus{
+    color: var(--color-focus);
+}

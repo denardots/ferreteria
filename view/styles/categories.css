@@ -1,0 +1,95 @@
+:root{
+    --color-title: #FFFFFF;
+    --color-logo: #EFB810;
+    --color-boton: #000000;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+/* Estilos para PC */
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+}
+.header__title{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-logo);
+    filter: drop-shadow(1px 1px 2px var(--color-title));
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 55vh;
+    width: 85vw;
+    margin: auto;
+    padding: 0 3vw;
+    padding-top: 6vh;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 31vh;
+    min-width: 23vw;
+    margin-bottom: 6vh;
+    padding: 0 2vw;
+    box-shadow: #00000070 0 0 0 1000000px inset;
+}
+.category__title{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-title);
+}
+.category__button{
+    padding: 1.5vh;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color-title);
+    background-color: var(--color-boton);
+}
+.category:first-child{
+    background: url(../../resources/images/construction.jpg);
+    background-size: cover;
+}
+.category:nth-child(2){
+    background: url(../../resources/images/carpentry.jpg);
+    background-size: cover;
+}
+.category:nth-child(3){
+    background: url(../../resources/images/electricity.webp);
+    background-size: cover;
+}
+.category:nth-child(4){
+    background: url(../../resources/images/security.jpeg);
+    background-size: cover;
+}
+.category:nth-child(5){
+    background: url(../../resources/images/plumbing.jpg);
+    background-size: cover;
+}
+.category:nth-child(6){
+    background: url(../../resources/images/painters.webp);
+    background-size: cover;
+}
+/* Transiciones y Efectos */
+.category:hover{
+    box-shadow: #000000A9 0 0 0 1000000px inset;
+}
+.category__button:hover{
+    color: var(--color-boton);
+    background-color: var(--color-logo);
+}
+.category__button:focus{
+    color: var(--color-boton);
+    background-color: #B98F0E;
+}

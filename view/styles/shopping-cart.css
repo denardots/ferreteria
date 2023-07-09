@@ -1,0 +1,103 @@
+:root{
+    --color-logo: #EFB810;
+    --color-info: #FFFFFF;
+    --color-fondo: #80868A4D;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+/* Estilos para PC */
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+}
+.header__title{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-logo);
+    filter: drop-shadow(1px 1px 2px var(--color-info));
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 55vh;
+    width: 80vw;
+    margin: auto;
+    padding: 3vh 4vw;
+}
+th, td{
+    padding: 1vh 1vw;
+    font-size: 18px;
+    font-weight: 500;
+    border: 3px solid var(--color-fondo);
+}
+th{
+    color: #000000;
+    background-color: var(--color-logo);
+}
+img{
+    height: 8vh;
+}
+.amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11vh;
+    font-size: 18px;
+}
+.amount__name{
+    margin-right: 1vw;
+    font-weight: 500;
+}
+.amount__operate{
+    height: 3vh;
+    border-radius: 50%;
+}
+.amount__number{
+    width: 2vw;
+    margin-left: 1vw;
+    font-weight: 500;
+    border: none;
+}
+.button{
+    padding: 1vh 1vw;
+    font-weight: 700;
+    background-color: #FFC300;
+    border: none;
+}
+.delete{
+    display: block;
+    margin: auto;
+    color: var(--color-info);
+    background-color: #FF0000;
+}
+.special{
+    color: #000000;
+    background-color: var(--color-logo);
+}
+.update{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+/* Transiciones y Efectos */
+.amount__operate:hover{
+    background-color: var(--color-logo);
+}
+.button:hover{
+    background-color: var(--color-logo);
+}
+.button:focus{
+    background-color: #B98F0E;
+}
+.delete:hover{
+    background-color: #CC1212;
+}
+.delete:focus{
+    background-color: #AA0E0E;
+}

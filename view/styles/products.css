@@ -1,0 +1,104 @@
+:root{
+    --color-title: #FFFFFF;
+    --color-logo: #EFB810;
+    --color-boton: #000000;
+    --color-name: #AAA9A9;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+/* Estilos para PC */
+body{
+    background-color: #80868A4D;
+}
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+}
+.header__title{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-logo);
+    filter: drop-shadow(1px 1px 2px var(--color-title));
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 55vh;
+    width: 85vw;
+    margin: auto;
+    padding: 0 3vw;
+    padding-top: 6vh;
+}
+.product{
+    text-align: center;
+    height: 31vh;
+    min-width: 17vw;
+    margin-bottom: 6vh;
+    background-color: var(--color-title);
+    border: 2px solid var(--color-name);
+}
+.product__card{
+    position: relative;
+    height: 22vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 1vh;
+}
+.product__card__img{
+    height: 22vh;
+    width: 100%;
+}
+.product__card__button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.5vh 0;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-title);
+    background-color: var(--color-boton);
+    opacity: 0;
+    transition: 0.5s;
+}
+.product__info{
+    text-decoration: none;
+}
+.product__info__name{
+    margin-top: 1.5vh;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-name);
+}
+.product__info__price{
+    margin-top: 0.5vh;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-logo);
+}
+/* Transiciones y Efectos */
+.product__card:hover .product__card__button{
+    opacity: 1;
+}
+.product__info:hover .product__info__name{
+    color: var(--color-boton);
+}
+.product__info:hover .product__info__price{
+    color: #B98F0E;
+}
+.product__card__button:hover{
+    color: var(--color-boton);
+    background-color: var(--color-logo);
+}
+.product__card__button:focus{
+    color: var(--color-boton);
+    background-color: #B98F0E;
+}

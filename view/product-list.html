@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denardo Taco Sánchez">
+    <link rel="icon" href="../resources/images/icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/nav-admin.css">
+    <link rel="stylesheet" href="styles/product-list.css">
+    <title>LISTA DE PRODUCTOS</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <figure>
+                <a href="panel.html">
+                    <img class="logo__img" src="../resources/images/logo.webp" alt="logo">
+                </a>
+            </figure>
+            <h1><a class="logo__title" href="panel.html">EL PERNO DORADO</a></h1>
+        </div>
+        <ul>
+            <li class="list">
+                <a class="list__link" href="panel.html">Panel del Administrador</a>
+            </li>
+            <li class="list">
+                <a class="list__link" href="product-list.html">Lista de Productos</a>
+            </li>
+            <li class="list">
+                <a class="list__link" href="new-product.html">Nuevo Producto</a>
+            </li>
+            <li class="list">
+                <a class="list__link" href="sales-history.html">Historial de Ventas</a>
+            </li>
+            <li class="list">
+                <a class="list__link close" href="../controller/close.php">Cerrar Sesión</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h2 class="header__title">LISTA DE PRODUCTOS</h2>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th>CÓDIGO</th>
+                <th>NOMBRE</th>
+                <th>CATEGORÍA</th>
+                <th>MARCA</th>
+                <th>STOCK</th>
+                <th>PRECIO</th>
+                <th colspan="2">ACCIONES</th>
+            </tr>
+            <tr>
+                <td>100869</td>
+                <td>Extensión Eléctrica 5M</td>
+                <td>Electricidad</td>
+                <td>Homelight</td>
+                <td class="stock">10</td>
+                <td>S/ 99.99</td>
+                <td>
+                    <a class="button" href="update-product.html">ACTUALIZAR</a>
+                </td>
+                <td>
+                    <button class="button delete">ELIMINAR</button>
+                </td>
+            </tr>
+            <tr>
+                <td>100869</td>
+                <td>Extensión Eléctrica 5M</td>
+                <td>Electricidad</td>
+                <td>Homelight</td>
+                <td class="stock">10</td>
+                <td>S/ 99.99</td>
+                <td>
+                    <a class="button" href="update-product.html">ACTUALIZAR</a>
+                </td>
+                <td>
+                    <button class="button delete">ELIMINAR</button>
+                </td>
+            </tr>
+            <tr>
+                <td>100869</td>
+                <td>Extensión Eléctrica 5M</td>
+                <td>Electricidad</td>
+                <td>Homelight</td>
+                <td class="stock">10</td>
+                <td>S/ 99.99</td>
+                <td>
+                    <a class="button" href="update-product.html">ACTUALIZAR</a>
+                </td>
+                <td>
+                    <button class="button delete">ELIMINAR</button>
+                </td>
+            </tr>
+            <tr>
+                <td>100869</td>
+                <td>Extensión Eléctrica 5M</td>
+                <td>Electricidad</td>
+                <td>Homelight</td>
+                <td class="stock">10</td>
+                <td>S/ 99.99</td>
+                <td>
+                    <a class="button" href="update-product.html">ACTUALIZAR</a>
+                </td>
+                <td>
+                    <button class="button delete">ELIMINAR</button>
+                </td>
+            </tr>
+        </table>
+        <button class="download">DESCARGAR LISTA</button>
+    </main>
+</body>
+</html>
