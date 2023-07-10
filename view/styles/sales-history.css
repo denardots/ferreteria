@@ -33,7 +33,6 @@ main{
 }
 th, td{
     padding: 1vh 1vw;
-    font-size: 18px;
     font-weight: 500;
     border: 3px solid var(--color-borde);
 }

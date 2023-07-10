@@ -38,11 +38,12 @@ main{
     padding-top: 6vh;
 }
 .product{
-    text-align: center;
-    height: 31vh;
+    height: 32vh;
     min-width: 17vw;
     margin-bottom: 6vh;
-    background-color: var(--color-title);
+    padding: 0.5vh 0;
+    text-align: center;
+    background-color: var(--color-slogan);
     border: 2px solid var(--color-name);
 }
 .product__card{
@@ -63,9 +64,10 @@ main{
     bottom: 0;
     padding: 1.5vh 0;
     text-decoration: none;
-    font-weight: 700;
-    color: var(--color-title);
-    background-color: var(--color-boton);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-slogan);
+    background-color: var(--color-nav);
     opacity: 0;
     transition: 0.5s;
 }
@@ -73,14 +75,13 @@ main{
     text-decoration: none;
 }
 .product__info__name{
-    margin-top: 1.5vh;
-    font-size: 20px;
+    margin-top: 0.5vh;
+    font-size: 18px;
     font-weight: 700;
     color: var(--color-name);
 }
 .product__info__price{
     margin-top: 0.5vh;
-    font-size: 18px;
     font-weight: 700;
     color: var(--color-logo);
 }

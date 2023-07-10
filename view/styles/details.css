@@ -46,28 +46,22 @@ main{
     background-color: var(--color-info);
 }
 .product__name{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     padding-bottom: 5px;
     border-bottom: 3px solid var(--color-fondo);
 }
-.product__data{
-    line-height: 1.5;
-    font-size: 17px;
-}
+
 .product__data__value{
     margin-left: 10px;
     font-weight: 500;
     color: var(--color-value);
 }
 .product__description{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     padding-bottom: 5px;
     border-bottom: 3px solid var(--color-fondo);
-}
-.product__text{
-    line-height: 1.5;
 }
 .product__form{
     text-align: center;
@@ -76,14 +70,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
 }
 .product__form__amount__name{
     margin-right: 1vw;
     font-weight: 500;
 }
 .product__form__amount__operate{
-    height: 3vh;
+    height: 2.5vh;
     border-radius: 50%;
 }
 .product__form__amount__number{
@@ -98,11 +91,10 @@ main{
     margin: auto;
     margin-top: 2vh;
     padding: 1vh;
-    font-size: 17px;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 1vh;
     border-color: var(--color-fondo);
-    background-color: #FFC300;
+    background-color: #FFEE00;
 }
 /* Transiciones y Efectos */
 .product__form__button:hover{

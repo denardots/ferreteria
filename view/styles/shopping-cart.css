@@ -32,8 +32,7 @@ main{
     padding: 3vh 4vw;
 }
 th, td{
-    padding: 1vh 1vw;
-    font-size: 18px;
+    padding: 0.8vh 1vw;
     font-weight: 500;
     border: 3px solid var(--color-fondo);
 }
@@ -49,14 +48,14 @@ img{
     justify-content: center;
     align-items: center;
     height: 11vh;
-    font-size: 18px;
 }
 .amount__name{
     margin-right: 1vw;
     font-weight: 500;
 }
 .amount__operate{
-    height: 3vh;
+    height: 2.5vh;
+    margin-top: 5px;
     border-radius: 50%;
 }
 .amount__number{

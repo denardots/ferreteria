@@ -38,8 +38,8 @@ header{
 }
 .slogan__phrase__title{
     margin-top: 5vh;
-    margin-bottom: 3vh;
-    font-size: 70px;
+    margin-bottom: 2vh;
+    font-size: 60px;
     font-weight: 700;
     font-style: italic;
 }
@@ -51,7 +51,7 @@ header{
 .slogan__phrase__idea{
     margin-top: 3vh;
     margin-bottom: 5vh;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     font-style: italic;
 }
@@ -59,7 +59,6 @@ header{
     margin-left: 3vh;
     padding: 1.5vh 2.5vh;
     text-decoration: none;
-    font-size: 17px;
     font-weight: 500;
     color: var(--color-slogan);
     border: 3px solid var(--color-slogan);
@@ -74,7 +73,7 @@ main{
 .benefits__title{
     padding: 2vh;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     color: var(--color-focus);
 }
@@ -96,7 +95,8 @@ main{
 }
 .benefits__items__name{
     margin: 1vh;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
 }
 .section{
     height: 10vh;
@@ -124,10 +124,11 @@ main{
     padding-top: 6vh;
 }
 .product{
-    text-align: center;
-    height: 31vh;
+    height: 32vh;
     min-width: 17vw;
     margin-bottom: 6vh;
+    padding: 0.5vh 0;
+    text-align: center;
     background-color: var(--color-slogan);
     border: 2px solid var(--color-name);
 }
@@ -149,7 +150,8 @@ main{
     bottom: 0;
     padding: 1.5vh 0;
     text-decoration: none;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 500;
     color: var(--color-slogan);
     background-color: var(--color-nav);
     opacity: 0;
@@ -159,14 +161,13 @@ main{
     text-decoration: none;
 }
 .product__info__name{
-    margin-top: 1.5vh;
-    font-size: 20px;
+    margin-top: 0.5vh;
+    font-size: 18px;
     font-weight: 700;
     color: var(--color-name);
 }
 .product__info__price{
     margin-top: 0.5vh;
-    font-size: 18px;
     font-weight: 700;
     color: var(--color-logo);
 }

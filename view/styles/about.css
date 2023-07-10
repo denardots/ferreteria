@@ -41,7 +41,7 @@ main{
 }
 .about__content__title{
     margin-bottom: 2vh;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     color: var(--color-title);
 }
@@ -79,7 +79,7 @@ main{
     padding: 5vh 3vw;
 }
 .values__title{
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -91,7 +91,7 @@ main{
 }
 .values__value{
     width: 30%;
-    padding: 5vh 2vw;
+    padding: 3vh 2vw;
     border: 2px solid #AAA9A9;
 }
 .values__value__img{
@@ -101,7 +101,7 @@ main{
 }
 .values__value__title{
     margin: 1vh 0;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
 }
 .values__value__text{

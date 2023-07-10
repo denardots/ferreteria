@@ -37,8 +37,7 @@ main{
     width: 95%;
     margin: auto;
     margin-bottom: 1vh;
-    padding: 1.5vh;
-    font-size: 17px;
+    padding: 1vh;
     border-radius: 1vh;
     border-color: var(--color-fondo);
 }
@@ -46,9 +45,9 @@ main{
     resize: none;
 }
 .contact-form__button{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
-    background-color: #FFC300;
+    background-color: #FFEE00;
 }
 /* Transiciones y Efectos */
 .contact-form__button:hover{
