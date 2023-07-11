@@ -10,29 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/nav-footer.css">
-    <link rel="stylesheet" href="styles/categories.css">
-    <title>CATEGORÍAS</title>
+    <link rel="stylesheet" href="styles/products.css">
+    <title>PRODUCTOS</title>
     <script src="https://kit.fontawesome.com/dd474d89cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="nav">
         <div class="nav__logo">
             <figure>
-                <a href="../index.html">
+                <a href="../index.php">
                     <img class="nav__logo__img" src="../resources/images/logo.webp" alt="logo">
                 </a>
             </figure>
-            <h1><a class="nav__logo__title" href="../index.html">EL PERNO DORADO</a></h1>
+            <h1><a class="nav__logo__title" href="../index.php">EL PERNO DORADO</a></h1>
         </div>
         <ul>
             <li class="nav__list">
-                <a class="nav__list__link" href="../index.html">Inicio</a>
+                <a class="nav__list__link" href="../index.php">Inicio</a>
             </li>
             <li class="nav__list">
-                <a class="nav__list__link" href="categories.html">Categorías</a>
+                <a class="nav__list__link" href="categories.php">Categorías</a>
             </li>
             <li class="nav__list">
-                <a class="nav__list__link" href="products.html">Productos</a>
+                <a class="nav__list__link" href="products.php">Productos</a>
             </li>
             <li class="nav__list">
                 <a class="nav__list__link" href="about.html">Nosotros</a>
@@ -58,32 +58,20 @@
         </a>
     </div>
     <header class="header">
-        <h2 class="header__title">CATEGORÍAS</h2>
+        <h2 class="header__title">PRODUCTOS</h2>
     </header>
     <main>
-        <article class="category">
-            <h2 class="category__title">CONSTRUCCIÓN</h2>
-            <a class="category__button" href="products.html">VER CATEGORÍA</a>
-        </article>
-        <article class="category">
-            <h2 class="category__title">CARPINTERÍA</h2>
-            <a class="category__button" href="products.html">VER CATEGORÍA</a>
-        </article>
-        <article class="category">
-            <h2 class="category__title">ELECTRICIDAD</h2>
-            <a class="category__button" href="products.html">VER CATEGORÍA</a>
-        </article>
-        <article class="category">
-            <h2 class="category__title">SEGURIDAD</h2>
-            <a class="category__button" href="products.html">VER CATEGORÍA</a>
-        </article>
-        <article class="category">
-            <h2 class="category__title">GASFITERÍA</h2>
-            <a class="category__button" href="products.html">VER CATEGORÍA</a>
-        </article>
-        <article class="category">
-            <h2 class="category__title">PINTURAS</h2>
-            <a class="category__button" href="products.html">VER CATEGORÍA</a>
+        <article class="product">
+            <figure class="product__card">
+                <a href="details.php">
+                    <img class="product__card__img" src="../resources/images/electric-extension.jpg" alt="producto">
+                </a>
+                <a class="product__card__button" href="shopping-cart.html">AGREGAR AL CARRITO</a>
+            </figure>
+            <a href="details.html" class="product__info">
+                <h2 class="product__info__name">Extensión Eléctrica 5M</h2>
+                <p class="product__info__price">S/99.99</p>
+            </a>
         </article>
     </main>
     <footer class="footer">

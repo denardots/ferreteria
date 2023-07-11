@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/nav-footer.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <title>CONTÁCTANOS</title>
+    <link rel="stylesheet" href="styles/details.css">
+    <title>DETALLES DEL PRODUCTO</title>
     <script src="https://kit.fontawesome.com/dd474d89cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -58,16 +58,37 @@
         </a>
     </div>
     <header class="header">
-        <h2 class="header__title">CONTACTANOS</h2>
+        <h2 class="header__title">PRODUCTO ELEGIDO</h2>
     </header>
     <main>
-        <form class="contact-form" action="#" method="post">
-            <input class="contact-form__input" type="text" placeholder="Nombre Completo" required>
-            <input class="contact-form__input" type="email" placeholder="Correo electrónico" required>
-            <input class="contact-form__input" type="text" placeholder="Asunto" required>
-            <textarea class="contact-form__input textarea" rows="7" placeholder="Escriba su mensaje" required></textarea>
-            <input class="contact-form__button" type="submit" value="ENVIAR MENSAJE">
-        </form>
+        <figure class="product">
+            <img class="product__img" src="../resources/images/electric-extension.jpg" alt="producto">
+        </figure>
+        <article class="product">
+            <h2 class="product__name">Extensión Eléctrica 5M</h2>
+            <div class="product__data">
+                <p>Código: <span class="product__data__value">100689</span></p>
+                <p>Precio: <span class="product__data__value">S/ 99.99</span></p>
+                <p>Marca: <span class="product__data__value">Homelight</span></p>
+            </div>
+            <div>
+                <h3 class="product__description">Descripción</h3>
+                <p class="product__text">Extensión eléctrica vulcanizada de 5 metros de largo, voltaje 220v - 60hz, conductores de cobre fósforo, calibre 0,785 mm2.</p>
+            </div>
+            <form class="product__form" action="shopping-cart.html" method="post">
+                <div class="product__form__amount">
+                    <labeL class="product__form__amount__name">CANTIDAD: </label>
+                    <figure>
+                        <img class="product__form__amount__operate" src="../resources/images/subtraction.png" alt="menos">
+                    </figure>
+                    <input class="product__form__amount__number" type="number" min="1" value="1" readonly>
+                    <figure>
+                        <img class="product__form__amount__operate" src="../resources/images/addition.png" alt="mas">
+                    </figure>
+                </div>
+                <input class="product__form__button" type="submit" value="AGREGAR AL CARRITO">
+            </form>
+        </article>
     </main>
     <footer class="footer">
         <figure>

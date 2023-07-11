@@ -19,24 +19,24 @@
     <script src="https://kit.fontawesome.com/dd474d89cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="nav">
+<nav class="nav">
         <div class="nav__logo">
             <figure>
-                <a href="index.html">
+                <a href="index.php">
                     <img class="nav__logo__img" src="resources/images/logo.webp" alt="logo">
                 </a>
             </figure>
-            <h1><a class="nav__logo__title" href="index.html">EL PERNO DORADO</a></h1>
+            <h1><a class="nav__logo__title" href="index.php">EL PERNO DORADO</a></h1>
         </div>
         <ul>
             <li class="nav__list">
-                <a class="nav__list__link" href="index.html">Inicio</a>
+                <a class="nav__list__link" href="index.php">Inicio</a>
             </li>
             <li class="nav__list">
-                <a class="nav__list__link" href="view/categories.html">Categorías</a>
+                <a class="nav__list__link" href="view/categories.php">Categorías</a>
             </li>
             <li class="nav__list">
-                <a class="nav__list__link" href="view/products.html">Productos</a>
+                <a class="nav__list__link" href="view/products.php">Productos</a>
             </li>
             <li class="nav__list">
                 <a class="nav__list__link" href="view/about.html">Nosotros</a>
@@ -71,7 +71,7 @@
                 <h2 class="slogan__phrase__subtitle">Los mejores precios</h2>
                 <h3 class="slogan__phrase__idea">Cuidamos Vida pero también tu Economía</h3>
                 <a class="slogan__phrase__link" href="view/contact.html">CONTÁCTANOS</a>
-                <a class="slogan__phrase__link" href="view/products.html">VER PRODUCTOS</a>
+                <a class="slogan__phrase__link" href="view/products.php">VER PRODUCTOS</a>
             </div>
         </div>
     </header>
@@ -104,7 +104,7 @@
     <div class="container">
         <article class="product">
             <figure class="product__card">
-                <a href="details.html">
+                <a href="view/details.php">
                     <img class="product__card__img" src="resources/images/electric-extension.jpg" alt="producto">
                 </a>
                 <a class="product__card__button" href="view/shopping-cart.html">AGREGAR AL CARRITO</a>
@@ -116,7 +116,7 @@
         </article>
         <article class="product">
             <figure class="product__card">
-                <a href="details.html">
+                <a href="view/details.php">
                     <img class="product__card__img" src="resources/images/electric-extension.jpg" alt="producto">
                 </a>
                 <a class="product__card__button" href="view/shopping-cart.html">AGREGAR AL CARRITO</a>
@@ -128,7 +128,7 @@
         </article>
         <article class="product">
             <figure class="product__card">
-                <a href="details.html">
+                <a href="view/details.php">
                     <img class="product__card__img" src="resources/images/electric-extension.jpg" alt="producto">
                 </a>
                 <a class="product__card__button" href="view/shopping-cart.html">AGREGAR AL CARRITO</a>
@@ -140,7 +140,7 @@
         </article>
         <article class="product">
             <figure class="product__card">
-                <a href="details.html">
+                <a href="view/details.php">
                     <img class="product__card__img" src="resources/images/electric-extension.jpg" alt="producto">
                 </a>
                 <a class="product__card__button" href="view/shopping-cart.html">AGREGAR AL CARRITO</a>
@@ -152,7 +152,7 @@
         </article>
         <article class="product">
             <figure class="product__card">
-                <a href="details.html">
+                <a href="view/details.php">
                     <img class="product__card__img" src="resources/images/electric-extension.jpg" alt="producto">
                 </a>
                 <a class="product__card__button" href="view/shopping-cart.html">AGREGAR AL CARRITO</a>
@@ -164,7 +164,7 @@
         </article>
         <article class="product">
             <figure class="product__card">
-                <a href="details.html">
+                <a href="view/details.php">
                     <img class="product__card__img" src="resources/images/electric-extension.jpg" alt="producto">
                 </a>
                 <a class="product__card__button" href="view/shopping-cart.html">AGREGAR AL CARRITO</a>
@@ -176,7 +176,7 @@
         </article>
         <article class="product">
             <figure class="product__card">
-                <a href="details.html">
+                <a href="view/details.php">
                     <img class="product__card__img" src="resources/images/electric-extension.jpg" alt="producto">
                 </a>
                 <a class="product__card__button" href="view/shopping-cart.html">AGREGAR AL CARRITO</a>
@@ -188,7 +188,7 @@
         </article>
         <article class="product">
             <figure class="product__card">
-                <a href="details.html">
+                <a href="view/details.php">
                     <img class="product__card__img" src="resources/images/electric-extension.jpg" alt="producto">
                 </a>
                 <a class="product__card__button" href="view/shopping-cart.html">AGREGAR AL CARRITO</a>

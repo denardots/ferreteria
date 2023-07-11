@@ -18,21 +18,21 @@
     <nav class="nav">
         <div class="nav__logo">
             <figure>
-                <a href="../index.html">
+                <a href="../index.php">
                     <img class="nav__logo__img" src="../resources/images/logo.webp" alt="logo">
                 </a>
             </figure>
-            <h1><a class="nav__logo__title" href="../index.html">EL PERNO DORADO</a></h1>
+            <h1><a class="nav__logo__title" href="../index.php">EL PERNO DORADO</a></h1>
         </div>
         <ul>
             <li class="nav__list">
-                <a class="nav__list__link" href="../index.html">Inicio</a>
+                <a class="nav__list__link" href="../index.php">Inicio</a>
             </li>
             <li class="nav__list">
-                <a class="nav__list__link" href="categories.html">Categorías</a>
+                <a class="nav__list__link" href="categories.php">Categorías</a>
             </li>
             <li class="nav__list">
-                <a class="nav__list__link" href="products.html">Productos</a>
+                <a class="nav__list__link" href="products.php">Productos</a>
             </li>
             <li class="nav__list">
                 <a class="nav__list__link" href="about.html">Nosotros</a>

@@ -6,7 +6,7 @@
     // Clase hija que permitirá realizar el login
     class Login extends Database{
         // Función que recibe la conexión, los datos del formulario y los verifica para realizar el login
-        public function login($connect,$username,$password){
+        public function enter($connect,$username,$password){
             // Preparamos la consulta SQL
             $connect->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
             $query=$connect->prepare("SELECT * FROM login WHERE username= :username AND password= :password");
@@ -28,7 +28,7 @@
     // En primer lugar debemos realizar la conexión a la base de datos y la guardamos en una variable
     $connect=$login->connect();
     // Luego enviamos la conexión y los datos del formulario a la función de login y guardamos la respuesta en una variable
-    $exists=$login->login($connect,$username,$password);
+    $exists=$login->enter($connect,$username,$password);
     // Cerramos la conexión a la base de datos
     $login->close($connect);
     // Consultamos si la variable recibió alguna respuesta del login

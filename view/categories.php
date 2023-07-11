@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+<?php
+// Llamamos al archivo de conexión
+require_once('../model/connect.php');
+// Clase hija que permitirá visualizar las categorías
+class Category extends Database{
+    // Función que recibe la conexión y obtiene los datos de las categorías
+    public function viewCategory($connect){
+        // Preparamos la consulta SQL
+        $connect->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+        $query=$connect->prepare("SELECT * FROM categories");
+        // Ejecutamos la consulta y guardamos la respuesta en una variable
+        $query->execute();
+        // Retornamos la variable que guarda el resultado
+        return $query;
+    }
+}
+// Creamos el objeto para obtener las categorias
+$category=new Category;
+// En primer lugar debemos realizar la conexión a la base de datos y la guardamos en una variable
+$connect=$category->connect();
+// Luego enviamos la conexión a la función de ver categorías y guardamos la respuesta en una variable
+$list=$category->viewCategory($connect);
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,29 +33,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/nav-footer.css">
-    <link rel="stylesheet" href="styles/details.css">
-    <title>DETALLES DEL PRODUCTO</title>
+    <link rel="stylesheet" href="styles/categories.css">
+    <title>CATEGORÍAS</title>
     <script src="https://kit.fontawesome.com/dd474d89cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="nav">
         <div class="nav__logo">
             <figure>
-                <a href="../index.html">
+                <a href="../index.php">
                     <img class="nav__logo__img" src="../resources/images/logo.webp" alt="logo">
                 </a>
             </figure>
-            <h1><a class="nav__logo__title" href="../index.html">EL PERNO DORADO</a></h1>
+            <h1><a class="nav__logo__title" href="../index.php">EL PERNO DORADO</a></h1>
         </div>
         <ul>
             <li class="nav__list">
-                <a class="nav__list__link" href="../index.html">Inicio</a>
+                <a class="nav__list__link" href="../index.php">Inicio</a>
             </li>
             <li class="nav__list">
-                <a class="nav__list__link" href="categories.html">Categorías</a>
+                <a class="nav__list__link" href="categories.php">Categorías</a>
             </li>
             <li class="nav__list">
-                <a class="nav__list__link" href="products.html">Productos</a>
+                <a class="nav__list__link" href="products.php">Productos</a>
             </li>
             <li class="nav__list">
                 <a class="nav__list__link" href="about.html">Nosotros</a>
@@ -58,37 +81,24 @@
         </a>
     </div>
     <header class="header">
-        <h2 class="header__title">PRODUCTO ELEGIDO</h2>
+        <h2 class="header__title">CATEGORÍAS</h2>
     </header>
     <main>
-        <figure class="product">
-            <img class="product__img" src="../resources/images/electric-extension.jpg" alt="producto">
-        </figure>
-        <article class="product">
-            <h2 class="product__name">Extensión Eléctrica 5M</h2>
-            <div class="product__data">
-                <p>Código: <span class="product__data__value">100689</span></p>
-                <p>Precio: <span class="product__data__value">S/ 99.99</span></p>
-                <p>Marca: <span class="product__data__value">Homelight</span></p>
-            </div>
-            <div>
-                <h3 class="product__description">Descripción</h3>
-                <p class="product__text">Extensión eléctrica vulcanizada de 5 metros de largo, voltaje 220v - 60hz, conductores de cobre fósforo, calibre 0,785 mm2.</p>
-            </div>
-            <form class="product__form" action="shopping-cart.html" method="post">
-                <div class="product__form__amount">
-                    <labeL class="product__form__amount__name">CANTIDAD: </label>
-                    <figure>
-                        <img class="product__form__amount__operate" src="../resources/images/subtraction.png" alt="menos">
-                    </figure>
-                    <input class="product__form__amount__number" type="number" min="1" value="1" readonly>
-                    <figure>
-                        <img class="product__form__amount__operate" src="../resources/images/addition.png" alt="mas">
-                    </figure>
-                </div>
-                <input class="product__form__button" type="submit" value="AGREGAR AL CARRITO">
-            </form>
+<?php
+    // Convertimos la variable en array y lo recorremos en un array
+    while($row=$list->fetch(PDO::FETCH_ASSOC)){
+?>
+        <article class="category">
+            <!-- Imprimimos el nombre de la categoría -->
+            <h2 class="category__title"><?php echo $row['name']; ?></h2>
+            <!-- Enviamos el id a la página de productos a través de un enlace -->
+            <a class="category__button" href="products.php?id=<?php echo $row['id'];?>">VER CATEGORÍA</a>
         </article>
+<?php
+    }
+    // Cerramos la conexión a la base de datos
+    $category->close($connect);
+?>
     </main>
     <footer class="footer">
         <figure>

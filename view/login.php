@@ -27,7 +27,7 @@
         <input class="login-form__input" type="password" name="password" placeholder="Ingrese su contraseña" required>
         <input class="login-form__button submit" type="submit" value="INICIAR SESIÓN">
         <input class="login-form__button reset" id="clean" type="reset" value="LIMPIAR">
-        <a class="login-form__link" href="../index.html">VOLVER AL INICIO</a>
+        <a class="login-form__link" href="../index.php">VOLVER AL INICIO</a>
         <!-- Párrafo que mostrará el mensaje en caso de error -->
         <p class="login-form__message" id="message"></p>
     </form>
