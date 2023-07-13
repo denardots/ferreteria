@@ -53,7 +53,7 @@
         <div class="shopping-cart__number">
             <span>10</span>
         </div>
-        <a class="shopping-cart__icon" href="shopping-cart.html">
+        <a class="shopping-cart__icon" href="view/shopping-cart.php">
             <i class="fa-solid fa-cart-shopping fa-2xl"></i>
         </a>
     </div>
@@ -68,7 +68,7 @@
                 </a>
                 <a class="product__card__button" href="shopping-cart.html">AGREGAR AL CARRITO</a>
             </figure>
-            <a href="details.html" class="product__info">
+            <a href="details.php" class="product__info">
                 <h2 class="product__info__name">Extensión Eléctrica 5M</h2>
                 <p class="product__info__price">S/99.99</p>
             </a>

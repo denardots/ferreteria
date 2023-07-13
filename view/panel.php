@@ -35,7 +35,7 @@
                 <a class="list__link" href="panel.php">Panel del Administrador</a>
             </li>
             <li class="list">
-                <a class="list__link" href="product-list.html">Lista de Productos</a>
+                <a class="list__link" href="product-list.php">Lista de Productos</a>
             </li>
             <li class="list">
                 <a class="list__link" href="new-product.php">Nuevo Producto</a>
@@ -54,7 +54,7 @@
     <main>
         <article class="option">
             <h2 class="option__title">LISTA DE PRODUCTOS</h2>
-            <a class="option__button" href="product-list.html">VER LISTA DE PRODUCTOS</a>
+            <a class="option__button" href="product-list.php">VER LISTA DE PRODUCTOS</a>
         </article>
         <article class="option">
             <h2 class="option__title">NUEVO PRODUCTO</h2>

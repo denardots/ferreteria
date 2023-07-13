@@ -31,7 +31,7 @@ PROGRAMACIÓN DE LA PÁGINA
 6º Formulario de Contacto
 7º Carrito de compras
 8º Ver Productos Admin
-9º Agregar producto
+9º Agregar producto (LISTO)
 10º Modificar producto
 11º Eliminar producto
 12º Historial de Ventas

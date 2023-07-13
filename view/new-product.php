@@ -37,39 +37,39 @@ $list=$category->viewCategory($connect);
     <title>NUEVO PRODUCTO</title>
 </head>
 <body>
-<nav>
-    <div class="logo">
-        <figure>
-            <a href="panel.php">
-                <img class="logo__img" src="../resources/images/logo.webp" alt="logo">
-            </a>
-        </figure>
-        <h1><a class="logo__title" href="panel.php">EL PERNO DORADO</a></h1>
-    </div>
-    <ul>
-        <li class="list">
-            <a class="list__link" href="panel.php">Panel del Administrador</a>
-        </li>
-        <li class="list">
-            <a class="list__link" href="product-list.html">Lista de Productos</a>
-        </li>
-        <li class="list">
-            <a class="list__link" href="new-product.php">Nuevo Producto</a>
-        </li>
-        <li class="list">
-            <a class="list__link" href="sales-history.html">Historial de Ventas</a>
-        </li>
-        <li class="list">
-            <a class="list__link close" href="../controller/close.php">Cerrar Sesión</a>
-        </li>
-    </ul>
-</nav>
+    <nav>
+        <div class="logo">
+            <figure>
+                <a href="panel.php">
+                    <img class="logo__img" src="../resources/images/logo.webp" alt="logo">
+                </a>
+            </figure>
+            <h1><a class="logo__title" href="panel.php">EL PERNO DORADO</a></h1>
+        </div>
+        <ul>
+            <li class="list">
+                <a class="list__link" href="panel.php">Panel del Administrador</a>
+            </li>
+            <li class="list">
+                <a class="list__link" href="product-list.php">Lista de Productos</a>
+            </li>
+            <li class="list">
+                <a class="list__link" href="new-product.php">Nuevo Producto</a>
+            </li>
+            <li class="list">
+                <a class="list__link" href="sales-history.html">Historial de Ventas</a>
+            </li>
+            <li class="list">
+                <a class="list__link close" href="../controller/close.php">Cerrar Sesión</a>
+            </li>
+        </ul>
+    </nav>
     <header class="header">
         <h2 class="header__title">AGREGAR NUEVO PRODUCTO</h2>
     </header>
     <main>
-        <form class="insert-form" action="../controller/new-product.php" method="post">
-            <input class="insert-form__input" type="text" name="code" placeholder="Código" required>
+        <form class="insert-form" action="../controller/new-product.php" method="post" autocomplete="off" enctype="multipart/form-data">
+            <input class="insert-form__input" type="text" name="code" placeholder="Código" maxlength="6" required>
             <input class="insert-form__input" type="text" name="name" placeholder="Nombre" required>
             <input class="insert-form__input" type="text" name="brand" placeholder="Marca" required>
             <select class="insert-form__input" name="category">
@@ -78,7 +78,7 @@ $list=$category->viewCategory($connect);
             while($row=$list->fetch(PDO::FETCH_ASSOC)){
         ?>
                 <option value="<?php echo $row['id'];?>">
-                    <?php echo $row['name']; ?>
+                    <?php echo $row['category']; ?>
                 </option>
         <?php
             }
@@ -87,7 +87,7 @@ $list=$category->viewCategory($connect);
         ?>
             </select>
             <input class="insert-form__input" type="number" name="stock" placeholder="Stock" required>
-            <input class="insert-form__input" type="number" name="price" placeholder="Precio" required>
+            <input class="insert-form__input" type="text" name="price" placeholder="Precio" required>
             <textarea class="insert-form__input textarea" name="description" rows="4" placeholder="Descripción del Producto" required></textarea>
             <input class="insert-form__input" type="file" name="file" required>
             <input class="insert-form__button" type="submit" value="AGREGAR PRODUCTO">

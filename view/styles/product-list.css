@@ -34,6 +34,7 @@ main{
 }
 th, td{
     padding: 1vh 1vw;
+    text-align: center;
     font-weight: 500;
     border: 3px solid var(--color-borde);
 }
@@ -43,9 +44,6 @@ th{
 }
 img{
     height: 8vh;
-}
-.stock{
-    text-align: center;
 }
 .button, .download{
     padding: 1vh 1vw;

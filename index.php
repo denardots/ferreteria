@@ -57,7 +57,7 @@
         <div class="shopping-cart__number">
             <span>10</span>
         </div>
-        <a class="shopping-cart__icon" href="view/shopping-cart.html">
+        <a class="shopping-cart__icon" href="view/shopping-cart.php">
             <i class="fa-solid fa-cart-shopping fa-2xl"></i>
         </a>
     </div>
