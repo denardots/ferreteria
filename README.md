@@ -30,10 +30,10 @@ PROGRAMACIÓN DE LA PÁGINA
 5º Página detallada de Producto
 6º Formulario de Contacto
 7º Carrito de compras
-8º Ver Productos Admin
+8º Ver Productos Admin (LISTO)
 9º Agregar producto (LISTO)
-10º Modificar producto
-11º Eliminar producto
+10º Modificar producto (LISTO)
+11º Eliminar producto (LISTO)
 12º Historial de Ventas
 13º Venta detallada
 14º Descarga de Archivos

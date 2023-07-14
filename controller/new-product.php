@@ -55,5 +55,5 @@
     // Luego enviamos la conexión a la función de agregar producto y agregamos el producto
     $product->newProduct($connect,$code,$name,$brand,$category,$stock,$price,$description,$img,$temp,$file);
     // Finalmente redireccionamos a la lista de productos
-    header('location:../view/product.list.php');
+    header('location:../view/product-list.php');
 ?>

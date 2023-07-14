@@ -90,7 +90,7 @@ $list=$category->viewCategory($connect);
 ?>
         <article class="category">
             <!-- Imprimimos el nombre de la categoría -->
-            <h2 class="category__title"><?php echo $row['name']; ?></h2>
+            <h2 class="category__title"><?php echo $row['category']; ?></h2>
             <!-- Enviamos el id a la página de productos a través de un enlace -->
             <a class="category__button" href="products.php?id=<?php echo $row['id'];?>">VER CATEGORÍA</a>
         </article>

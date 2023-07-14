@@ -5,7 +5,7 @@
     require_once('../model/connect.php');
     // Clase hija que permitirá visualizar las categorías
     class Products extends Database{
-        // Función que recibe la conexión y obtiene los datos de las categorías
+        // Función que recibe la conexión, el dato de la URL y obtiene los datos de las categorías
         public function viewProducts($connect,$id){
             // Preparamos la consulta SQL
             $connect->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -73,7 +73,7 @@
         <h2 class="header__title">MODIFICAR PRODUCTO</h2>
     </header>
     <main>
-        <form class="update-form" action="#" method="post">
+        <form class="update-form" action="../controller/update-product.php" method="post">
             <input type="hidden" name="code" value="<?php echo $exists['code']; ?>">
             <div class="update-form__input"><?php echo "Código: ".$exists['code']; ?></div>
             <div class="update-form__input"><?php echo "Nombre: ".$exists['name']; ?></div>
@@ -81,13 +81,13 @@
             <div class="update-form__input"><?php echo "Categoría: ".$exists['category']; ?></div>
             <div class="update-form__editable">
                 <label  class="update-form__input label">Precio: S/</label>
-                <input class="update-form__input" type="text"name="price" value="<?php echo $exists['price']; ?>" required>
+                <input class="update-form__input" type="text" name="price" value="<?php echo number_format($exists['price'],2,'.','');?>" required>
             </div>
             <div class="update-form__editable">
                 <label  class="update-form__input label">Stock</label>
-                <input class="update-form__input" type="number"name="stock" value="<?php echo $exists['stock']; ?>" required>
+                <input class="update-form__input" type="number" name="stock" value="<?php echo $exists['stock']; ?>" required>
             </div>
-            <textarea class="update-form__input textarea" name="desc" rows="5" required><?php echo $exists['description']; ?></textarea>
+            <textarea class="update-form__input textarea" name="description" rows="5" required><?php echo $exists['description']; ?></textarea>
             <input class="update-form__button" type="submit" value="MODIFICAR PRODUCTO">
         </form>
     </main>

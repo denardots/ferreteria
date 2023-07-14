@@ -88,12 +88,12 @@
                 <td><?php echo $row['category'];?></td>
                 <td><?php echo $row['brand'];?></td>
                 <td><?php echo $row['stock'];?></td>
-                <td><?php echo "S/".$row['price'];?></td>
+                <td><?php echo "S/".number_format($row['price'],2,'.','');?></td>
                 <td>
                     <a class="button" href="update-product.php?id=<?php echo $row['code'];?>">ACTUALIZAR</a>
                 </td>
                 <td>
-                    <button class="button delete">ELIMINAR</button>
+                    <button class="button delete" name="<?php echo $row['code'];?>" value="<?php echo $row['name'];?>">ELIMINAR</button>
                 </td>
             </tr>
     <?php
@@ -104,5 +104,26 @@
         </table>
         <button class="download">DESCARGAR LISTA</button>
     </main>
+    <article class="alert" id="alert">
+        <h2 class="alert__title">ELIMINAR PRODUCTO</h2>
+        <p class="alert__title" id="product"></p>
+        <div class="alert__opciones">
+            <a class="button confirm" id="confirmed">ELIMINAR</a>
+            <a class="button" href="product-list.php">CANCELAR</a>
+        </div>
+    </article>
+    <script>
+        let buttons = document.getElementsByClassName(`delete`);
+        const message=document.getElementById(`alert`);
+        const product=document.getElementById(`product`);
+        const confirmed=document.getElementById(`confirmed`);
+        for(let i=0;i<buttons.length;i++){
+            buttons[i].addEventListener(`click`,function(){
+                message.style.display=`flex`;
+                product.textContent=(`¿Está seguro que desea eliminar ${this.value}`);
+                confirmed.href=`../controller/delete.php?id=${this.name}`;
+            });
+        }
+    </script>
 </body>
 </html>
